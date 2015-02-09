@@ -7,7 +7,9 @@ layout: default
 
 Most web APIs require authentication, usually in the headers. The convenience methods on `NSURLConnection` that PromiseKit provides will not be sufficient here. They are deliberately simple for the 90% usage.
 
-We will use `OMGHTTPURLRQ` to generate `NSURLRequest`s that we will then will pass to PromiseKit:
+We will use *OMGHTTPURLRQ* to construct `NSURLRequest`s that we will then will pass to PromiseKit. You already have OMGHTTPURLRQ because PromiseKit imports it in order to generate requests for its `NSURLConnection` categories.
+
+OMGHTTPURLRQ is a useful helper library that does the difficult work required in correctly constructing REST-style API requests.
 
 {% highlight objectivec %}
 @interface MyAPI
