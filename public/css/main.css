@@ -152,3 +152,7 @@ code .external-link {
   box-sizing: border-box;
   width: auto;
 }
+
+.contents ol {
+  margin: 0.1rem;
+}
