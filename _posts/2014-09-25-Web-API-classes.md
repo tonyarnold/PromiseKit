@@ -36,6 +36,7 @@ static inline void auth(NSMutableURLRequest *rq) {
 + (PMKPromise *)fetchKittens:(NSInteger)count {
     id url = [HOST stringByAppendingString:path];
     NSMutableURLRequest *rq = [OMGHTTPURLRQ GET:url];
+    auth(rq);
     return [NSURLConnection promise:rq];
 }
 
@@ -45,6 +46,8 @@ static inline void auth(NSMutableURLRequest *rq) {
     OMGMultipartFormData *multipartFormData = [OMGMultipartFormData new];
     [multipartFormData addFile:imageData parameterName:@"kitten1" filename:@"kitten1.jpg" contentType:@"image/jpeg"];
     NSMutableURLRequest *rq = [OMGHTTPURLRQ POST:url:multipartFormData];
+
+    auth(rq);
 
     return [NSURLConnection promise:rq];
 }
