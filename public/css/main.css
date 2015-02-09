@@ -47,8 +47,8 @@ aside {
   font-size: 0.9rem;
   padding: 1rem;
   display: block;
-  text-align:justify;
-  text-justify:inter-word;
+  text-align: justify;
+  text-justify: inter-word;
 }
 aside:before {
   content: "Oh! BTW…";
@@ -153,6 +153,11 @@ code .external-link {
   width: auto;
 }
 
+.contents ol, .contents ol li {
+  margin-left:0; padding-left:0; list-style-position:inside;
+}
+
 .contents ol {
   margin: 0.1rem;
 }
+
