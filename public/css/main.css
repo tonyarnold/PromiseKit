@@ -106,7 +106,7 @@ a.pagination:after {
 }
 
 a.pagination {
-  font-size: xx-large;
+  font-size: 2rem;
   text-transform: uppercase;
   background: HSL(212, 100%, 35%);
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
