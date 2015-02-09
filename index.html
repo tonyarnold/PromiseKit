@@ -2,7 +2,21 @@
 layout: opener
 ---
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+<![endif]-->
+
+<div class="github-fork-ribbon-wrapper right">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/mxcl/PromiseKit">Fork me on GitHub</a>
+  </div>
+</div>
+  
 <style>
+.right .github-fork-ribbon {
+    background-color: HSLA(204, 100%, 40%, 0.85);
+}
 .top {
     font-size: 1.5rem;
     text-align: center;
@@ -10,7 +24,7 @@ layout: opener
     margin-bottom: 2rem;
 }
 .block {
-    background: HSLA(204, 100%, 40%, 0.1);;
+    background: HSLA(204, 100%, 40%, 0.1);
     padding: 2rem;
     box-sizing: border-box;
     margin: 0 2%;
@@ -36,11 +50,11 @@ layout: opener
 .bigger {
     font-size: 1.5em;
 }
-.right {
+.mxcl-right {
   text-align: right;
   font-size: 0.8em;
 }
-.right:before {
+.mxcl-right:before {
   content: "—";
 }
 a.block.next {
@@ -77,13 +91,13 @@ a.block.next:hover {
     <div class="block">PromiseKit is available in Objective-C and Swift flavors.</div>
     <div class="block quote">
       <div class="bigger">“PromiseKit is the dog’s bollocks”</div>
-      <div class="right">I.A. McOder</div>
+      <div class="mxcl-right">I.A. McOder</div>
     </div>
   </div>
   <div style='display:table-row'>
     <div class="block quote">
       <div class="bigger">“PromiseKit unravelled my spaghetti code”</div>
-      <div class="right">Alec Init</div>
+      <div class="mxcl-right">Alec Init</div>
     </div>
     <a class="block next" href='/introduction'>
       LEARN HOW<span class="thang"></span>
